@@ -1,0 +1,140 @@
+#content-wrapper {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    flex-wrap: wrap; 
+    gap: 20px;
+}
+
+
+
+/*making the background of the page black and giving the main body color gold, main font of Arial for body*/
+body {
+    background-color: black; 
+    color: gold; 
+    font-family: Arial, Helvetica, sans-serif; 
+    
+}
+/*making sure the header in in the center, making sure header text uses times new roman, same for h1-h3*/
+header{
+top:0;
+text-align: center;
+background-color: gold;
+color:black;
+font-family:'Times New Roman', serif; 
+}
+
+header h2{
+   color:black;
+   font-family:'Times New Roman', serif; 
+}
+
+/*used section ids to make things easier to move around*/
+#introtext{
+   text-align: center;
+}
+
+/*for the picture, ul, and body::after blocks, plugged existing code into chat gpt and asked it make it so that my image block
+would appear on the right side of the screen and not clash with footer as i was having trouble with that */
+#picture{
+    display: flex;
+    height: 200px;
+    width: auto;
+   float: right;
+   background-color: gray; 
+   text-align: center; 
+  margin: auto;
+   
+}
+
+
+
+#pof{
+   float: right;
+   margin-bottom: 40px;
+   
+}
+
+ul {
+   display: inline-block; /* Prevents list from stretching full width */    
+/* Aligns properly with the image */     
+   vertical-align: top;     
+    
+}
+
+body::after {
+   content: "";
+   display: block;
+   clear: both; /* Prevents float-related layout issues */
+}
+/*making font sizes differ for h1-h3 and the p elements*/
+h1{
+   font-size: 2.0em;
+   font-family:'Times New Roman', serif; 
+}
+
+h2{
+   font-size: 1.8em;
+   color: white;
+   line-height: 100%;
+   text-align: center;
+   font-family:'Times New Roman', serif; 
+}
+
+h3{
+   font-size: 1.3em;
+   color: white;
+   font-family:'Times New Roman', serif; 
+}
+
+p{
+   font-size: 1.0em;
+}
+
+nav{
+text-align: center;
+font-weight: bold;
+font-size: 1.0em;
+}
+
+
+footer{
+    text-align: center;
+    background-color: gold;
+    color:black;
+    clear:both;
+    font-size: .60em;
+    bottom: 0;
+    position:fixed;
+    width: 99vw;
+}
+
+/*making links a bit more special*/
+a{
+   color: gold;
+   text-decoration: line;
+}
+
+a:hover{
+   color:silver;
+}
+
+a:visited {
+   color: gray;
+} 
+
+#contactform{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    width: 60%;
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    background-color: black;
+    border: 2px solid gold;
+    border-radius: 10px;
+    text-align:center;
+    
+}
